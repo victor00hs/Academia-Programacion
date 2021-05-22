@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" [ngClass]="{'show': navbarOpen}">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-1">
-            <a class="nav-link" routerLink="/home" routerLinkActive="activeLink">Home</a>
+            <a class="nav-link" routerLink="/home" (click)="toggleNavbar()" routerLinkActive="activeLink">Home</a>
           </li>
           <li class="nav-item mx-1">
-            <a class="nav-link" routerLink="/home" routerLinkActive="activeLink">Cursos Nuevos</a>
+            <a class="nav-link" routerLink="/cursos-nuevos" (click)="toggleNavbar()" routerLinkActive="activeLink">Cursos Nuevos</a>
           </li>
           <li class="nav-item mx-1">
-            <a class="nav-link" routerLink="/home" routerLinkActive="activeLink">Perfil</a>
+            <a class="nav-link" routerLink="/perfil" (click)="toggleNavbar()" routerLinkActive="activeLink">Perfil</a>
           </li>
           <li class="nav-item mx-1">
-            <a class="nav-link" routerLink="" routerLinkActive="activeLink">Mis Cursos</a>
+            <a class="nav-link" routerLink="/mis-cursos" (click)="toggleNavbar()" routerLinkActive="activeLink">Mis Cursos</a>
           </li>
         </ul>
     </div>
