@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
+  public isCollapsedAcademic = true;
+  public isCollapsedEconomic = true;
+  public isCollapsedCourses = true;
+  public isCollapsedPreviousCourses = true;
+
   constructor() { }
 
   ngOnInit(): void {

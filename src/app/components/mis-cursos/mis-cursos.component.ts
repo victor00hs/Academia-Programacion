@@ -14,8 +14,12 @@ export class MisCursosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  add() {
+  addCourse() {
     this.router.navigateByUrl('/cursos-nuevos');
+  };
+
+  detailCourse() {
+    this.router.navigateByUrl('/curso');
   };
 
 }

@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Iconos -->
+
+<div class="container">
+    <button type="button" class="selectorBtn" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"> Temas </button>
+    
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <div class="card">
+        <div class="contentCollapse">
+            <a href="/curso#tema1"><strong>Tema 1</strong>: Introducción</a>
+        </div>
+        <div class="contentCollapse">
+            <a href="/curso#tema2"> <strong>Tema 2</strong>: Programación Web</a>
+        </div>
+        <div class="contentCollapse">
+            <a href="/curso#tema3"><strong>Tema 3</strong>: Hoja de estilo</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="tema1" class="tema">
+        <p class="titulo">Tema 1: Introducción</p>
+        <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into <strong> typesetting</strong>, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
+        <div class="card">
+            <iframe src="https://codepen.io/champlainelearning/embed/nmJud?default-tab=html&amp;line-numbers=true&amp;height=350" height="220px" alt="Code Snippet Tema 1"></iframe>
+            <a href="https://codepen.io/champlainelearning/pen/nmJud" target="_blank">Pulsa <strong>aqui</strong> para interactuar. </a>
+        </div>
+        <button type="button" class="detail" (click)=volverIndice()>Volver al Índice</button>
+    </div>
+    <hr>
+
+    <div class="tema" id="tema2">
+        <p class="titulo">Tema 2: Programacion Web</p>
+        <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into <strong> typesetting</strong>, remaining essentially unchanged. </p>
+        <img src="https://blog.educacionit.com/wp-content/uploads/2019/04/blog-educacionit-17.jpg" alt="Tema 2: Programacion Web">
+        <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+
+        <button type="button" class="detail" (click)=volverIndice()>Volver al Índice</button>
+    </div>
+    <hr>
+
+    <div class="tema" id="tema3">
+        <p class="titulo" >Tema 3: Hoja de estilo</p>
+        <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into <strong> typesetting</strong>, remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.</p>
+        <div class="card">        
+            <iframe src="https://codepen.io/champlainelearning/embed/nmJud?default-tab=html&amp;line-numbers=true&amp;height=350" height="220px" alt="Code Snippet Tema 3"></iframe>
+            <a href="https://codepen.io/champlainelearning/pen/nmJud" target="_blank">Pulsa <strong>aqui</strong> para interactuar. </a>
+        </div>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>        
+        <button type="button" class="detail" (click)=volverIndice()>Volver al Índice</button>
+    </div>
+    <hr>
+
+</div>

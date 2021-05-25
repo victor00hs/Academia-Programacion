@@ -1,2 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+//botones 
+.detail{
+    //background-color: rgb(255, 212, 155);
+    background-color: #88C3FF;
+    color:black;
+    border: none;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    border-radius:6px;
+}
+
+//Contenido del selector de temas Collapse
+.contentCollapse{
+    margin: 1vh auto 1vh 2vh;
+}
+
+//Boton de selector de temas
+.selectorBtn{
+    width:100%;
+    margin-top: 2vh;
+    background-color: #88C3FF;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}

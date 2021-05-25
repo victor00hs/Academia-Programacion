@@ -1,1 +1,77 @@
-<p>perfil works!</p>
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 derecha">
+                <a href="/home"> <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+        <h1>Mi Perfil</h1>
+    </div>
+    <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/05/07/16203887297193.jpg" alt="">
+</div>
+<div class="container">
+    <!-- Expediente Académico -->
+    <button type="button" class="selectorBtn" (click)="collapseAcademic.toggle()" [attr.aria-expanded]="!isCollapsedAcademic"> Expedinete Académico </button>
+    <div #collapseAcademic="ngbCollapse" [(ngbCollapse)]="isCollapsedAcademic">
+        <div class="card">
+            <div class="contentCollapse">
+                <a><strong>Nombre</strong>: Ramón Alonso Íñiguez</a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Nº Expediente</strong>: 123456</a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Calle</strong>: Bartolomé, 42069</a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Telefono</strong>: 123442069</a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Correo</strong>: ramon@ramon.com</a>
+            </div>
+        </div>
+    </div>
+    <!-- Informacion Económica -->
+    <button type="button" class="selectorBtn" (click)="collapseEconomic.toggle()" [attr.aria-expanded]="!isCollapsedEconomic"> Información Económica </button>
+    <div #collapseEconomic="ngbCollapse" [(ngbCollapse)]="isCollapsedEconomic">
+        <div class="card">
+            <div class="contentCollapse">
+                <a><strong>Pagos Mensuales</strong>: 3 Cursos</a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Pago Total</strong>: Lorem Ipsum</a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Expediente</strong>: 42069</a>
+            </div>
+        </div>
+    </div>
+    <!-- Cursos Actuales -->
+    <button type="button" class="selectorBtn" (click)="collapseCourses.toggle()" [attr.aria-expanded]="!isCollapsedCourses"> Cursos Actuales </button>
+    <div #collapseCourses="ngbCollapse" [(ngbCollapse)]="isCollapsedCourses">
+        <div class="card">
+            <div class="contentCollapse">
+                <a><strong>Python</strong></a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>Java</strong></a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>NodeJS</strong></a>
+            </div>
+        </div>
+    </div>
+    <!-- Cursos Pasados -->
+    <button type="button" class="selectorBtn" (click)="collapsePreviousCourses.toggle()" [attr.aria-expanded]="!isCollapsedPreviousCourses"> Cursos Pasados </button>
+    <div #collapsePreviousCourses="ngbCollapse" [(ngbCollapse)]="isCollapsedPreviousCourses">
+        <div class="card">
+            <div class="contentCollapse">
+                <a><strong>HTML</strong></a>
+            </div>
+            <div class="contentCollapse">
+                <a><strong>C++</strong></a>
+            </div>
+        </div>
+    </div>
+    
+</div>

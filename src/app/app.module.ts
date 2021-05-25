@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { MisCursosComponent } from './components/mis-cursos/mis-cursos.component';
 import { CursosNuevosComponent } from './components/cursos-nuevos/cursos-nuevos.component';
+import { CursoComponent } from './components/curso/curso.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { CursosNuevosComponent } from './components/cursos-nuevos/cursos-nuevos.
     HomeComponent,
     PerfilComponent,
     MisCursosComponent,
-    CursosNuevosComponent
+    CursosNuevosComponent,
+    CursoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
