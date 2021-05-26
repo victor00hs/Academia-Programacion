@@ -11,6 +11,9 @@ import { MisCursosComponent } from './components/mis-cursos/mis-cursos.component
 import { CursosNuevosComponent } from './components/cursos-nuevos/cursos-nuevos.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PerfilComponent,
     MisCursosComponent,
     CursosNuevosComponent,
-    CursoComponent
+    CursoComponent,
+    RegisterComponent,
+    LoginComponent,
+    SplashScreenComponent
   ],
   imports: [
     BrowserModule,

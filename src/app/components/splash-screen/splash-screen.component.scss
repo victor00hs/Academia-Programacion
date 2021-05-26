@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.container{
+    background-color:#ffc488;
+    height: 100vh;
+    width: 100vw;
+}
+
+//Centrar texto
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+//parrafos
+p{
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-family: 'Odibee Sans', cursive;
+    color: white;
+}
