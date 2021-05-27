@@ -9,3 +9,53 @@ img {
   background-color: rgb(187, 187, 187);
   opacity: 0.8;
 }
+.wrapper { //dos columnas para el container
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.position{ // posicionar en columnas de 2
+  grid-auto-columns: auto;
+  grid-auto-rows:auto;
+  padding-bottom: 16px;
+}
+
+.image{ //imagen redondeada 
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.card{ //tarjeta
+  text-align: center;
+  align-items: center;
+  //border: none !important;
+}
+
+//Icono suma
+.suma{
+  border-color: black;
+  border:2px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+a{
+  text-decoration: none;
+}
+
+//Estilo de los titulos 
+.texto{
+  padding: 2px, 2px;
+  font-weight: bold;
+  width: 100%;
+  background-color: rgb(255, 212, 155);
+}
+
+.center{
+  text-align: center;
+  position:center;
+  margin-top:50%;
+  margin-bottom:50%;
+}
