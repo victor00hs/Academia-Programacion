@@ -4,16 +4,27 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+//Colores
+:root {
+    --mountainMeadow: #09BC8A;
+    --stealTeal: #508991;
+    --warmBlack: #004346;
+    --prusianBlue: #172A3A;
+    --mediumTurquoise: #75DDDD;
+}
+
+
 //botones 
 .detail{
     //background-color: rgb(255, 212, 155);
-    background-color: #88C3FF;
-    color:black;
+    background-color: var(--mountainMeadow);
+    color:white;
     border: none;
     width:50%;
     margin-left:25%;
     margin-right:25%;
     border-radius:6px;
+    margin-bottom: 1vh;
 }
 
 //Contenido del selector de temas Collapse
@@ -31,3 +42,5 @@
     color: white;
     font-weight: bold;
 }
+
+

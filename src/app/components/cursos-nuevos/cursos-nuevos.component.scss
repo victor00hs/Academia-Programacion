@@ -36,13 +36,14 @@
     border-radius: 50%;
     font-size: 24px;
 }
-a{
-    text-decoration: none;
-}
 
 //Estilo de los titulos 
 .texto{
     padding: 2px, 2px;
     font-weight: bold;
-    background-color: rgb(255, 212, 155);
+    background-color: var(--mediumTurquoise);
+}
+
+a{
+    text-decoration: none;
 }

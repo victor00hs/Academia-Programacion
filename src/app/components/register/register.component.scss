@@ -6,7 +6,7 @@ img {
 }
 
 .todo{
-    background:#ffc488;
+    background: var(--stealTeal);
     height: 100vh;
 }
 
@@ -22,10 +22,6 @@ h2{
   margin-top: 4vh;
 }
 
-hr{
-    border: 2px solid blue;
-}
-
 body {
     align-items: center;
     display: flex;
@@ -39,7 +35,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    background-color: #ffc488;
+    background-color: var(--stealTeal);
     box-shadow: 
     12px 12px 16px 0 rgba(0, 0, 0, 0.15),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.15);
@@ -107,3 +103,6 @@ label{
     min-height: 100vh;
 }
 
+a {
+    color: var(--mediumTurquoise);
+}

@@ -43,13 +43,13 @@
 .texto{
     padding: 2px, 2px;
     font-weight: bold;
-    background-color: rgb(255, 212, 155);
+    background-color: var(--mediumTurquoise);
 }
 
 //Añadir curso
 .add{
-    background-color: rgb(255, 212, 155);
-    color:black;
+    background-color: var(--mountainMeadow);
+    color:whitesmoke;
     font-weight: bold;
     border: none; 
 }
