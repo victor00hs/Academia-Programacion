@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Iconos -->
 <app-navbar></app-navbar>
 <div class="container">
+    <h1>
     <button type="button" class="selectorBtn" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"> Temas </button>
-    
+</h1>
     <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
     <div class="card">
         <div class="contentCollapse">
@@ -27,7 +28,7 @@
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
             including versions of Lorem Ipsum.</p>
         <div class="card">
-            <iframe src="https://codepen.io/champlainelearning/embed/nmJud?default-tab=html&amp;line-numbers=true&amp;height=350" height="220px" alt="Code Snippet Tema 1"></iframe>
+            <iframe src="https://codepen.io/champlainelearning/embed/nmJud?default-tab=html&amp;line-numbers=true&amp;height=350" title="Tema 1: Code example" height="220px" alt="Code Snippet Tema 1"></iframe>
             <a href="https://codepen.io/champlainelearning/pen/nmJud" target="_blank">Pulsa <strong>aqui</strong> para interactuar. </a>
         </div>
         <button type="button" class="detail" (click)=volverIndice()>Volver al Índice</button>
@@ -54,7 +55,7 @@
         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
         including versions of Lorem Ipsum.</p>
         <div class="card">        
-            <iframe src="https://codepen.io/champlainelearning/embed/nmJud?default-tab=html&amp;line-numbers=true&amp;height=350" height="220px" alt="Code Snippet Tema 3"></iframe>
+            <iframe src="https://codepen.io/champlainelearning/embed/nmJud?default-tab=html&amp;line-numbers=true&amp;height=350" title="Tema3: Code example" height="220px" alt="Code Snippet Tema 3"></iframe>
             <a href="https://codepen.io/champlainelearning/pen/nmJud" target="_blank">Pulsa <strong>aqui</strong> para interactuar. </a>
         </div>
         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>        
