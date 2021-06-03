@@ -11,6 +11,7 @@
     --warmBlack: #004346;
     --prusianBlue: #172A3A;
     --mediumTurquoise: #75DDDD;
+    --white: #ffff;
 }
 
 
@@ -18,7 +19,8 @@
 .detail{
     //background-color: rgb(255, 212, 155);
     background-color: var(--mountainMeadow);
-    color:white;
+    color: var(--white);
+    font-weight: bold;
     border: none;
     width:50%;
     margin-left:25%;
@@ -41,6 +43,7 @@
     border: none;
     color: white;
     font-weight: bold;
+    font-size: 22px;
 }
 
 

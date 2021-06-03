@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="container">
+  <!-- Carrousel Noticias/Anuncios -->
   <h1>Noticias/Anuncios</h1>
-  <!-- Carrousel -->
   <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
@@ -28,11 +28,10 @@
       </div>
     </ng-template>
   </ngb-carousel>
-  <!-- Fin Carrousel -->
+  <hr>
 
-  <!-- Inicio del carrousel de recomendados -->
+  <!-- Carousel Recomendados -->
   <h1>Recomendaciones</h1>
-  <!-- Carrousel -->
   <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
@@ -43,9 +42,6 @@
             <p class="suma">➕</p>
           </a>
         </div>
-      </div>
-      <div class="carousel-caption">
-        <p class="text-carrousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -58,9 +54,6 @@
           </a>
         </div>
       </div>
-      <div class="carousel-caption center">
-        <p class="text-carrousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
@@ -72,18 +65,10 @@
           </a>
         </div>
       </div>
-      <div class="carousel-caption">
-        <p class="text-carrousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
     </ng-template>
-
   </ngb-carousel>
-  <!-- Fin del carrousel de recomendados -->
-</div>
-<div class="container">
-
-</div>
-<div class="container">
+  <hr>
+  <!-- Calendario-->
   <h1>Calendario</h1>
   <div class="container">
     <img src="https://icalendario.net/media/imprimir/2021/mensual/junio/calendario-junio-2021-office.png"
