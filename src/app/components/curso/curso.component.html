@@ -2,7 +2,7 @@
 <app-navbar></app-navbar>
 <div class="container">
     <h1>
-    <button type="button" class="selectorBtn" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"> Temas </button>
+    <button type="button" class="selectorBtn" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"> Desplegar los temas ▼</button>
 </h1>
     <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
     <div class="card">
@@ -21,7 +21,7 @@
 
 <div class="container">
     <div id="tema1" class="tema">
-        <p class="titulo">Tema 1: Introducción</p>
+        <p class="titulo"><strong>Tema 1:</strong>  Introducción</p>
         <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
             It has survived not only five centuries, but also the leap into <strong> typesetting</strong>, remaining essentially unchanged. 
@@ -36,7 +36,7 @@
     <hr>
 
     <div class="tema" id="tema2">
-        <p class="titulo">Tema 2: Programacion Web</p>
+        <p class="titulo"><strong>Tema 2:</strong> Programacion Web</p>
         <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
             It has survived not only five centuries, but also the leap into <strong> typesetting</strong>, remaining essentially unchanged. </p>
@@ -48,7 +48,7 @@
     <hr>
 
     <div class="tema" id="tema3">
-        <p class="titulo" >Tema 3: Hoja de estilo</p>
+        <p class="titulo" ><strong>Tema 3:</strong> Hoja de estilo</p>
         <p class="contenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
         It has survived not only five centuries, but also the leap into <strong> typesetting</strong>, remaining essentially unchanged. 

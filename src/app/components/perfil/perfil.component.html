@@ -12,7 +12,7 @@
 </div>
 <div class="container">
     <!-- Expediente Académico -->
-    <button type="button" class="selectorBtn" (click)="collapseAcademic.toggle()" [attr.aria-expanded]="!isCollapsedAcademic"> Expediente Académico </button>
+    <button type="button" class="selectorBtn" (click)="collapseAcademic.toggle()" [attr.aria-expanded]="!isCollapsedAcademic"> Expediente Académico ▼</button>
     <div #collapseAcademic="ngbCollapse" [(ngbCollapse)]="isCollapsedAcademic">
         <div class="card">
             <div class="contentCollapse">
@@ -33,7 +33,7 @@
         </div>
     </div>
     <!-- Informacion Económica -->
-    <button type="button" class="selectorBtn" (click)="collapseEconomic.toggle()" [attr.aria-expanded]="!isCollapsedEconomic"> Información Económica </button>
+    <button type="button" class="selectorBtn" (click)="collapseEconomic.toggle()" [attr.aria-expanded]="!isCollapsedEconomic"> Información Económica ▼</button>
     <div #collapseEconomic="ngbCollapse" [(ngbCollapse)]="isCollapsedEconomic">
         <div class="card">
             <div class="contentCollapse">
@@ -48,7 +48,7 @@
         </div>
     </div>
     <!-- Cursos Actuales -->
-    <button type="button" class="selectorBtn" (click)="collapseCourses.toggle()" [attr.aria-expanded]="!isCollapsedCourses"> Cursos Actuales </button>
+    <button type="button" class="selectorBtn" (click)="collapseCourses.toggle()" [attr.aria-expanded]="!isCollapsedCourses"> Cursos Actuales ▼</button>
     <div #collapseCourses="ngbCollapse" [(ngbCollapse)]="isCollapsedCourses">
         <div class="card">
             <div class="contentCollapse">
@@ -63,7 +63,7 @@
         </div>
     </div>
     <!-- Cursos Pasados -->
-    <button type="button" class="selectorBtn" (click)="collapsePreviousCourses.toggle()" [attr.aria-expanded]="!isCollapsedPreviousCourses"> Cursos Pasados </button>
+    <button type="button" class="selectorBtn" (click)="collapsePreviousCourses.toggle()" [attr.aria-expanded]="!isCollapsedPreviousCourses"> Cursos Pasados ▼</button>
     <div #collapsePreviousCourses="ngbCollapse" [(ngbCollapse)]="isCollapsedPreviousCourses">
         <div class="card">
             <div class="contentCollapse">
